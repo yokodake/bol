@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: #fff;
+  color: #78286c;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* image list */
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.img-list > li {
+  float: left;
+}
+
+ul.img-list > li a.img-item {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.img-item-box {
+  margin: 16px;
+  width: 300px;
+  height: 350px;
+}
+
+.img-item-box a.img-item {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.img-item-box a.img-item > img {
+  max-width: 300px;
+}
+
+.img-item-box span {
+  align: center;
+  margin: auto;
+  margin-top: 5px;
+  display: table;
+}
+a.img-item {
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+a.img-item:hover {
+  border: 1px solid #78286c;
+  border-radius: 4px;
+}
+
+a:visited, a:hover, a:link, a:active, .link {
+  color: rgb(51, 51, 51);
+}
+a:visited, a:link, a:active, .link {
+  text-decoration-line: underline;
+}
+a:hover, .link:hover {
+  text-decoration-line: none;
+}
+
+/* query box */
+div.bloc-query {
+  background:  rl("http://haskell.org/img/pattern.png");
+}
+div.query-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+#query {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  width: 50%;
+}
+
+/* image focus (for wp) */
+#img-focus {
+  z-index: 30;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.if-left {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.if-image {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.if-image a {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  line-height: 0;
+  max-width: 100%;
+}
+.if-image img,
+.if-image video {
+  max-width: 100%;
+  max-height: calc(100vh - 25px);
+  border: none;
+}
+.if-wps {
+  flex: 0 0 150px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+  border-left: 1px solid #fff;
+}
+.if-wps-img {
+  flex: 0 0 auto;
+  padding: 3px;
+  line-height: 0;
+}
+.if-wps-img img {
+  max-width: 125px;
+  max-height: 125px;
+  height: auto;
+  width: auto;
+}
+.if-wps-head {
+  /* background: rgba(69, 58, 98, .5);  /* dark */
+  /* background: rgba(93, 78, 132, .5); /* mid */
+  background: rgba(143, 78, 139,.8); /* light purple */
+}
